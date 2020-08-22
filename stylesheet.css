@@ -1,1 +1,10 @@
+.heroImage {
+  width: 100vw;
+  height: 40vh;
+  background-color: green;
+}
 
+
+.heroImageDog {
+  background-color: blue;
+}
