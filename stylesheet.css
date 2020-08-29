@@ -1,10 +1,143 @@
-.heroImage {
-  width: 100vw;
-  height: 40vh;
-  background-color: green;
+body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar {
+  height: 50px;
+  width: calc(100vw - 20px);
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.hamburgerMenuContainer {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.hamburgerMenu{
+    height: 40px;
+    width: 40px;
+    max-width: 10vw;
+    background-color: grey;
+}
+
+.title{
+  width:60%;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Alata', sans-serif;
+}
+
+.dogButtonContainer {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.dogButton{
+  height: 40px;
+  width: 60px;
+  background-color: grey;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
 }
 
 
-.heroImageDog {
-  background-color: blue;
+.dogButtonSelected{
+  justify-content: flex-end;
+}
+
+.toggleCircle{
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.heroImage{
+  width: 30vw;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30vw;
+}
+
+.imageLeft{
+  background-image: url("assets/1a.png");
+}
+
+.imageWordsLeft{
+  background-image: url("assets/1b.png");
+}
+
+.imageDogLeft{
+  background-image: url("assets/1c.png");
+}
+
+.imageCenter{
+  background-image: url("assets/2a.png");
+}
+
+.imageWordsCenter{
+  background-image: url("assets/2b.png");
+}
+
+.imageDogCenter{
+  background-image: url("assets/2c.png");
+}
+
+.imageRight{
+  background-image: url("assets/3a.png");
+}
+
+.imageWordsRight{
+  background-image: url("assets/3b.png");
+}
+
+.imageDogRight{
+  background-image: url("assets/3c.png");
+}
+
+
+
+
+
+@media only screen  and (max-width: 979px) {
+
+  .heroContainer {
+    scroll-snap-type: x mandatory;
+    display: flex;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+  }
+
+  .heroContainer::-webkit-scrollbar {display: none}
+
+  .heroImage{
+   width: 100vw;
+   background-size: 80vw;
+   scroll-snap-align: start;
+   position: relative;
+  }
+
+
 }
