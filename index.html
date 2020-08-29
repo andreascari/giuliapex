@@ -5,22 +5,78 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Giulia Pex</title>
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
 
     <script>
       function dogmode() {
-        document.getElementById("heroImage").classList.toggle("heroImageDog")
+        document.getElementById("dogLeft").classList.toggle("imageDogLeft")
+        document.getElementById("dogCenter").classList.toggle("imageDogCenter")
+        document.getElementById("dogRight").classList.toggle("imageDogRight")
+        document.getElementById("wordsLeft").classList.toggle("imageWordsLeft")
+        document.getElementById("wordsCenter").classList.toggle("imageWordsCenter")
+        document.getElementById("wordsRight").classList.toggle("imageWordsRight")
+        document.getElementById("dogButton").classList.toggle("dogButtonSelected")
       }
     </script>
 
 
-    <button onclick="dogmode()"> activate dog mode
-    </button>
 
-    <div class="heroImage" id="heroImage">
-    </div>
+          <div class="navbar">
+
+            <div class="hamburgerMenuContainer">
+                <div class="hamburgerMenu">
+                </div>
+            </div>
+
+               <div class="title">
+                  giulia pex
+              </div>
+
+              <div class="dogButtonContainer">
+                    <div class="dogButton" id="dogButton" onclick="dogmode()" >
+                        <div class="toggleCircle">
+                        </div>
+                    </div>
+              </div>
+
+          </div>
+
+
+
+                <div class="heroContainer" >
+
+                            <div class="heroImage imageLeft" >
+                              <div class="heroImage imageWordsLeft" id="wordsLeft">
+                                <div class="heroImage" id="dogLeft">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="heroImage imageCenter" >
+                              <div class="heroImage imageWordsCenter" id="wordsCenter">
+                                <div class="heroImage" id="dogCenter">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="heroImage imageRight" >
+                              <div class="heroImage imageWordsRight" id="wordsRight">
+                                <div class="heroImage" id="dogRight">
+                                </div>
+                              </div>
+                            </div>
+
+                    </div>
+
+
 
   </body>
+
+
+
 </html>
