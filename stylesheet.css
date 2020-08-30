@@ -22,11 +22,28 @@ body{
 }
 
 .hamburgerMenu{
-    height: 40px;
-    width: 40px;
-    max-width: 10vw;
-    background-color: grey;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: transform 0.2s;
 }
+
+.hamburgerMenuLine{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.hamburgerMenuDot{
+  height: 5px;
+  width: 5px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+
 
 .title{
   width:60%;
@@ -38,19 +55,22 @@ body{
 .dogButtonContainer {
   width: 20%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 
 }
 
 .dogButton{
-  height: 40px;
-  width: 60px;
-  background-color: grey;
-  padding-left: 5px;
-  padding-right: 5px;
+  height: 15px;
+  width: 19px;
+  border: 1px solid black;
+  padding-left: 3px;
+  padding-right: 3px;
   border-radius: 20px;
   display: flex;
   align-items: center;
+
 }
 
 
@@ -59,14 +79,18 @@ body{
 }
 
 .toggleCircle{
-  height: 30px;
-  width: 30px;
-  background-color: white;
+  height: 10px;
+  width: 10px;
+  background-color: black;
   border-radius: 40px;
 }
 
+.dogModeText{
+  font-family: 'Alata', sans-serif;
+  font-size: 14px;
+}
+
 .heroContainer {
-  margin-top: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -75,7 +99,7 @@ body{
 
 .heroImage{
   width: 30vw;
-  height: 50vh;
+  height: 70vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30vw;
@@ -145,6 +169,7 @@ body{
 
 .instaButtonContainer{
   width: 100vw;
+  margin-top: 3vh;
   display: flex;
   justify-content: center;
 }
@@ -176,12 +201,14 @@ body{
     justify-content: flex-start;
     -webkit-overflow-scrolling: touch;
     overflow-x: scroll;
+    margin-top: 10vh;
   }
 
   .heroContainer::-webkit-scrollbar {display: none}
 
   .heroImage{
    width: 100vw;
+   height: 50vh;
    background-size: 80vw;
    scroll-snap-align: start;
    position: relative;
@@ -205,10 +232,10 @@ body{
 
 
   .indicatorDot{
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 10px;
-    background-color: grey;
+    border: 1px solid black;
   }
 
   .indicatorDotActive{
