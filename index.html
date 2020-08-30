@@ -12,68 +12,135 @@
 
   <body>
 
-    <script>
-      function dogmode() {
-        document.getElementById("dogLeft").classList.toggle("imageDogLeft")
-        document.getElementById("dogCenter").classList.toggle("imageDogCenter")
-        document.getElementById("dogRight").classList.toggle("imageDogRight")
-        document.getElementById("wordsLeft").classList.toggle("imageWordsLeft")
-        document.getElementById("wordsCenter").classList.toggle("imageWordsCenter")
-        document.getElementById("wordsRight").classList.toggle("imageWordsRight")
-        document.getElementById("dogButton").classList.toggle("dogButtonSelected")
-      }
-    </script>
+          <script>
+
+
+            function dogmode() {
+              document.getElementById("dogLeft").classList.toggle("imageDogLeft")
+              document.getElementById("dogCenter").classList.toggle("imageDogCenter")
+              document.getElementById("dogRight").classList.toggle("imageDogRight")
+              document.getElementById("wordsLeft").classList.toggle("imageWordsLeft")
+              document.getElementById("wordsCenter").classList.toggle("imageWordsCenter")
+              document.getElementById("wordsRight").classList.toggle("imageWordsRight")
+              document.getElementById("dogButton").classList.toggle("dogButtonSelected")
+
+              var x = document.getElementById("instaButton");
+              if (x.innerHTML === "say woof on instagram") {
+                x.innerHTML = "say hi on instagram";
+                } else {
+                  x.innerHTML = "say woof on instagram";
+                }
+            }
 
 
 
-          <div class="navbar">
+          </script>
 
-            <div class="hamburgerMenuContainer">
-                <div class="hamburgerMenu">
-                </div>
-            </div>
 
-               <div class="title">
-                  giulia pex
-              </div>
 
-              <div class="dogButtonContainer">
-                    <div class="dogButton" id="dogButton" onclick="dogmode()" >
-                        <div class="toggleCircle">
+                  <div class="navbar">
+
+                    <div class="hamburgerMenuContainer">
+                        <div class="hamburgerMenu">
                         </div>
                     </div>
-              </div>
 
-          </div>
+                       <div class="title">
+                          giulia pex
+                      </div>
+
+                      <div class="dogButtonContainer">
+                            <div class="dogButton" id="dogButton" onclick="dogmode()" >
+                                <div class="toggleCircle">
+                                </div>
+                            </div>
+                      </div>
+
+                  </div>
 
 
 
                 <div class="heroContainer" >
 
-                            <div class="heroImage imageLeft" >
+                            <div class="imageColumn heroImage imageLeft" >
                               <div class="heroImage imageWordsLeft" id="wordsLeft">
-                                <div class="heroImage" id="dogLeft">
+                                <div class="heroImage imageDogLeftInactive" id="dogLeft">
                                 </div>
                               </div>
                             </div>
 
-                            <div class="heroImage imageCenter" >
+                            <div class="imageColumn heroImage imageCenter" >
                               <div class="heroImage imageWordsCenter" id="wordsCenter">
-                                <div class="heroImage" id="dogCenter">
+                                <div class="heroImage imageDogCenterInactive" id="dogCenter">
                                 </div>
                               </div>
                             </div>
 
-                            <div class="heroImage imageRight" >
+                            <div class="imageColumn heroImage imageRight" >
                               <div class="heroImage imageWordsRight" id="wordsRight">
-                                <div class="heroImage" id="dogRight">
+                                <div class="heroImage imageDogRightInactive" id="dogRight">
                                 </div>
                               </div>
                             </div>
 
                     </div>
 
+                    <div class="indicatorDotContainer">
 
+
+                          <div class="indicatorDots">
+                                <div class="indicatorDot">
+                                </div>
+                                <div class="indicatorDot">
+                                </div>
+                                <div class="indicatorDot">
+                                </div>
+                          </div>
+
+
+                    </div>
+
+
+                    <div class="instaButtonContainer">
+
+                        <a class="instaButton" id="instaButton" href="https://www.instagram.com/giuliapex">
+                          say hi on instagram
+                        </a>
+
+                    </div>
+
+
+                <script>
+                                    const list = document.querySelector('.heroContainer');
+                                    const items = Array.from(document.querySelectorAll('.imageColumn'));
+                                    const indicators = Array.from(document.querySelectorAll('.indicatorDot'));
+
+                                    const observer = new IntersectionObserver(onIntersactionObserved,
+                                      {
+                                        root: list,
+                                        threshold: 0.5
+                                    });
+
+                                    items.forEach(item => {
+                                      observer.observe(item);
+                                    });
+
+                                    function onIntersactionObserved(entries) {
+                                      entries.forEach(entry => {
+                                        if (entry.isIntersecting) {
+                                          const intersectingIndex = items.indexOf(entry.target);
+                                          activateIndicator(intersectingIndex);
+                                        }
+                                      });
+                                    }
+
+                                    function activateIndicator(index) {
+                                      indicators.forEach((indicator,i) => {
+                                        indicator.classList.toggle('indicatorDotActive', i===index);
+                                      });
+                                      }
+
+              </script>
 
   </body>
 

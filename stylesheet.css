@@ -66,6 +66,7 @@ body{
 }
 
 .heroContainer {
+  margin-top: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -74,7 +75,7 @@ body{
 
 .heroImage{
   width: 30vw;
-  height: 80vh;
+  height: 50vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30vw;
@@ -88,8 +89,16 @@ body{
   background-image: url("assets/1b.png");
 }
 
+.imageDogLeftInactive{
+  background-image: url("assets/1c.png");
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
 .imageDogLeft{
   background-image: url("assets/1c.png");
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 .imageCenter{
@@ -100,8 +109,16 @@ body{
   background-image: url("assets/2b.png");
 }
 
+.imageDogCenterInactive{
+  background-image: url("assets/2c.png");
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
 .imageDogCenter{
   background-image: url("assets/2c.png");
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 .imageRight{
@@ -112,11 +129,42 @@ body{
   background-image: url("assets/3b.png");
 }
 
-.imageDogRight{
+.imageDogRightInactive{
   background-image: url("assets/3c.png");
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 
+.imageDogRight{
+  background-image: url("assets/3c.png");
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+
+.instaButtonContainer{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.instaButton{
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+  font-family: 'Alata', sans-serif;
+  transition: color 1s, background-color 1s;
+}
+
+.instaButton:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
 
 
 
@@ -137,6 +185,34 @@ body{
    background-size: 80vw;
    scroll-snap-align: start;
    position: relative;
+  }
+
+  .indicatorDotContainer{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .indicatorDots{
+    width: 12vw;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+
+  .indicatorDot{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: grey;
+  }
+
+  .indicatorDotActive{
+    background-color: black;
   }
 
 
