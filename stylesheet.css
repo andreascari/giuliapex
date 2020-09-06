@@ -4,6 +4,55 @@ body{
   overflow: hidden;
 }
 
+
+.intro{
+  width:100vw;
+  height:100vh;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  font-family: 'Alata', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  animation-name: introWhiteAnimation;
+  animation-duration: 3.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes introWhiteAnimation {
+  0%{opacity: 1}
+  80%{opacity: 1}
+  99%{z-index:200}
+  100%{opacity: 0}
+  100%{z-index: -200}
+}
+
+.introBlack{
+  width:100vw;
+  height:200vh;
+  background-color: black;
+  position: absolute;
+  z-index: 250;
+  animation-name: introBlackAnimation;
+  animation-duration: 3.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes introBlackAnimation {
+  0% {top: -200vh}
+  100% {top: 100vh;}
+}
+
+.introTitle{
+  position: relative;
+  font-size: 30px;
+  z-index: 300;
+}
+
 .navbar {
   height: 50px;
   width: calc(100vw - 20px);
@@ -98,6 +147,10 @@ body{
 
 .menuItem:hover{
     cursor: pointer;
+}
+
+.menuItem:visited{
+  border-bottom: 4px solid white;
 }
 
 .menuItemSelected span{
@@ -291,8 +344,13 @@ body{
   width: 30vw;
   height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content:  center;
   padding-right: 20vw;
+}
+
+.emailStyle{
+  text-decoration: underline;
 }
 
 

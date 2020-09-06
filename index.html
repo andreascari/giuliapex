@@ -46,6 +46,7 @@
               document.getElementById("homeLink").classList.add("menuItemSelected")
               document.getElementById("aboutLink").classList.remove("menuItemSelected")
 
+
               setTimeout(() => {
                 menu();
                 document.getElementById("homePage").classList.remove("hideHomePage")
@@ -59,6 +60,7 @@
               document.getElementById("homeLink").classList.remove("menuItemSelected")
               document.getElementById("aboutLink").classList.add("menuItemSelected")
 
+
               setTimeout(() => {
               menu();
               document.getElementById("homePage").classList.add("hideHomePage")
@@ -68,9 +70,30 @@
             }
 
 
+            function shopMenu() {
+              document.getElementById("homeLink").classList.add("menuItemSelected")
+              document.getElementById("aboutLink").classList.remove("menuItemSelected")
+
+
+              setTimeout(() => {
+                menu();
+                document.getElementById("homePage").classList.remove("hideHomePage")
+                document.getElementById("aboutPage").classList.add("hideAboutPage")
+                document.getElementById("dogButtonContainer").classList.remove("hideDogButton")
+              }, 350);
+            }
 
 
           </script>
+
+
+                <div class="intro">
+                    <div class="introBlack">
+                    </div>
+                    <div class ="introTitle">
+                      giulia pex
+                    </div>
+                </div>
 
 
                   <div class="navbar">
@@ -122,8 +145,9 @@
                           <span> about <span>
                         </a>
 
-                        <a class="menuItem" href="https://giuliapex.bigcartel.com" target="_blank">
-                          shop
+                        <a class="menuItem" onclick="shopMenu()" id="shopLink"
+                        href="https://giuliapex.bigcartel.com" target="_blank">
+                          <span> shop <span>
                         </a>
                   </div>
 
@@ -207,10 +231,10 @@
                           She currently works as a freelancer to save money to afford a personal dog to pet.
                           <br>
                           <br>
-                          If you want to get in touch, drop me an email at giuliapex@gmail.com
+                          for enquiries: <span class="emailStyle"> giuliapex@gmail.com </span>
                           <br>
                           <br>
-                          Selected Clients: Il Corriere della Sera, Hoppìpolla Edizioni, Presque Lune, FCB Global, Scientific American Mind, Braga+Federico, Franco Angeli Edizioni, Università Cattolica del Sacro Cuore.
+                          Selected Clients: Il Corriere della Sera, Mondadori, Hoppìpolla Edizioni, Presque Lune, Liana Editorial, FCB Global, Scientific American Mind, Braga+Federico, Università Cattolica del Sacro Cuore.
                         </div>
 
                     </div>
@@ -225,7 +249,7 @@
 
 
                     </div>
-                </div>    
+                </div>
 
 
 
