@@ -476,8 +476,9 @@ body{
 
 .profileDescriptionContainer{
     width: 80vw;
+    height: auto;
     padding-top: 5vh;
-    padding-bottom: calc(6vh + 200px);
+    padding-bottom: 40vh;
     display: flex;
     align-items: flex-start;
     padding-right: 10vw;
@@ -485,9 +486,10 @@ body{
   }
 
   .bottomContainer{
+    height: 15vh;
     position: absolute;
-    bottom: 0px;
     background-color: white;
+    bottom: 0;
   }
 
   .instaButtonContainer{
