@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
 
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
   </head>
 
@@ -35,25 +36,43 @@
 
             function menu() {
               document.getElementById("menu").classList.toggle("expandedMenu")
+              document.getElementById("backgroundCover").classList.toggle("hideBackgroundCover")
+            }
+
+
+
+            function homeMenu() {
+
+              document.getElementById("homeLink").classList.add("menuItemSelected")
+              document.getElementById("aboutLink").classList.remove("menuItemSelected")
+
+              setTimeout(() => {
+                menu();
+                document.getElementById("homePage").classList.remove("hideHomePage")
+                document.getElementById("aboutPage").classList.add("hideAboutPage")
+                document.getElementById("dogButtonContainer").classList.remove("hideDogButton")
+              }, 500);
             }
 
             function aboutMenu() {
+
+              document.getElementById("homeLink").classList.remove("menuItemSelected")
+              document.getElementById("aboutLink").classList.add("menuItemSelected")
+
+              setTimeout(() => {
               menu();
               document.getElementById("homePage").classList.add("hideHomePage")
-              document.getElementById("aboutPage").classList.add("showAboutPage")
+              document.getElementById("aboutPage").classList.remove("hideAboutPage")
+              document.getElementById("dogButtonContainer").classList.add("hideDogButton")
+            }, 500);
             }
 
-            function homeMenu() {
-              menu();
-              document.getElementById("homePage").classList.remove("hideHomePage")
-              document.getElementById("aboutPage").classList.remove("showAboutPage")
-            }
 
 
 
           </script>
 
-
+                  <iframe src="https://giphy.com/embed/fnlXXGImVWB0RYWWQj" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cute-aww-eyebleach-fnlXXGImVWB0RYWWQj">via GIPHY</a></p>
 
                   <div class="navbar">
 
@@ -90,25 +109,32 @@
                         </div>
                     </div>
 
+
+                  <div class="backgroundCover hideBackgroundCover moveDownBackgroundCover" id="backgroundCover">
+                  </div>
+
                   <div class="closedMenu" id="menu">
 
-                        <a class="menuItem" onclick="homeMenu()">
-                          home
-                        </a>
-                        <a class="menuItem" onclick="aboutMenu()">
-                          about
+                        <a class="menuItem menuItemSelected" onclick="homeMenu()" id="homeLink">
+                          <span>home<span>
                         </a>
 
-                        <a class="menuItem" href="/about">
+                        <a class="menuItem" onclick="aboutMenu()" id="aboutLink">
+                          <span> about <span>
+                        </a>
+
+                        <a class="menuItem" href="https://giuliapex.bigcartel.com" target="_blank">
                           shop
                         </a>
                   </div>
+
+
 
                        <div class="title">
                           giulia pex
                       </div>
 
-                      <div class="dogButtonContainer" onclick="dogmode()">
+                      <div class="dogButtonContainer" onclick="dogmode()" id="dogButtonContainer">
 
                               <div class="dogButton" id="dogButton">
                                   <div class="toggleCircle">
@@ -166,24 +192,26 @@
               </div>
 
 
-                    <div class="aboutLayout" id="aboutPage">
+                    <div class="aboutLayout hideAboutPage" id="aboutPage">
 
                         <div class="profileImage">
                         </div>
 
 
                         <div class="profileDescription">
-                          Giulia Pex is an illustrator currently based in Milano.
-                          <br>
-                          Giulia was born and raised in a vibrant small city in the countryside.
+                          Giulia Pex is an illustrator based in Milan, Italy. Born and raised in the faraway country, she started express herself better with images rather than words since she was a kid.
                           <br>
                           <br>
-                          Despite the fascination for drawing, Giulia has inititally studied photography and actively worked as a still life photographer and set designer, to then realise that something was not in the right place.
-                          <br>
-                          Giulia has since then worked for global clients and her first graphic novel "Khalat" has been published internationally and translated in different languages.
+                          Fallen in love with her camera, she attended the Italian Institute of Photography where she experimented the commingling between her images and drawings. Not really satisfied, she decided to join the illustration class at Scuola del Fumetto to focus on research and improvement of her personal style.
                           <br>
                           <br>
-                          Selected clients: Corriere della Sera, Asfero Films, Nike
+                          She currently works as a freelancer to save money to afford a personal dog to pet.
+                          <br>
+                          <br>
+                          If you want to get in touch, drop me an email at giuliapex@gmail.com
+                          <br>
+                          <br>
+                          Selected Clients: Il Corriere della Sera, Hoppìpolla Edizioni, Presque Lune, FCB Global, Scientific American Mind, Braga+Federico, Franco Angeli Edizioni, Università Cattolica del Sacro Cuore.
                         </div>
 
                     </div>
