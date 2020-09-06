@@ -44,6 +44,30 @@ body{
 }
 
 
+.closedMenu{
+  background-color: black;
+  width: 30vw;
+  height: 100vh;
+  position: absolute;
+  left: -30vw;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  transition: left 200ms;
+}
+
+.expandedMenu{
+  left: 0;
+}
+
+.menuItem{
+  color: white;
+  font-family: 'Alata', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+
 .title{
   width:60%;
   text-align: center;
@@ -87,6 +111,19 @@ body{
 .dogModeText{
   font-family: 'Alata', sans-serif;
   font-size: 14px;
+}
+
+
+.showHomePage{
+  display: block;
+}
+
+.hideHomePage{
+  display: none;
+}
+
+.showAboutPage{
+  display:block;
 }
 
 .heroContainer {
@@ -190,6 +227,30 @@ body{
   transition: all 0.5s;
 }
 
+.aboutLayout{
+  height: 80vh;
+  display: flex;
+}
+
+.profileImage{
+  width: 50vw;
+  height: 100%;
+  background-size: 20vw;
+  background-image: url("assets/giulia.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.profileDescription{
+  font-family: 'Alata',sans-serif;
+  width: 30vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 20vw;
+}
+
 
 
 @media only screen  and (max-width: 979px) {
@@ -241,15 +302,22 @@ body{
     background-color: black;
   }
 
+  .aboutLayout{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
 
   .profileImage{
-    width: 50vh;
-    height: auto;
-    background-image: url("assets/3c.png");
+    width:100vw;
+    height: 80vh;
+    background-size: 80vw;
   }
 
   .profileDescription{
-    background-color: blue;
-    color: red;
-    font-family: 'Alata',sans-serif;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    padding-right: 10vw;
+    padding-left: 10vw;
   }

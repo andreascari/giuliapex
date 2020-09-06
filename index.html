@@ -33,6 +33,23 @@
             }
 
 
+            function menu() {
+              document.getElementById("menu").classList.toggle("expandedMenu")
+            }
+
+            function aboutMenu() {
+              menu();
+              document.getElementById("homePage").classList.add("hideHomePage")
+              document.getElementById("aboutPage").classList.add("showAboutPage")
+            }
+
+            function homeMenu() {
+              menu();
+              document.getElementById("homePage").classList.remove("hideHomePage")
+              document.getElementById("aboutPage").classList.remove("showAboutPage")
+            }
+
+
 
           </script>
 
@@ -41,7 +58,7 @@
                   <div class="navbar">
 
                     <div class="hamburgerMenuContainer">
-                        <div class="hamburgerMenu">
+                        <div class="hamburgerMenu" onclick="menu()">
 
                         <div class="hamburgerMenuLine">
                             <div class="hamburgerMenuDot">
@@ -73,6 +90,20 @@
                         </div>
                     </div>
 
+                  <div class="closedMenu" id="menu">
+
+                        <a class="menuItem" onclick="homeMenu()">
+                          home
+                        </a>
+                        <a class="menuItem" onclick="aboutMenu()">
+                          about
+                        </a>
+
+                        <a class="menuItem" href="/about">
+                          shop
+                        </a>
+                  </div>
+
                        <div class="title">
                           giulia pex
                       </div>
@@ -93,6 +124,7 @@
                   </div>
 
 
+          <div class="showHomePage" id="homePage">
 
                 <div class="heroContainer" >
 
@@ -120,19 +152,42 @@
                     </div>
 
                     <div class="indicatorDotContainer">
+                            <div class="indicatorDots">
+                                  <div class="indicatorDot">
+                                  </div>
+                                  <div class="indicatorDot">
+                                  </div>
+                                  <div class="indicatorDot">
+                                  </div>
+                            </div>
+                    </div>
 
 
-                          <div class="indicatorDots">
-                                <div class="indicatorDot">
-                                </div>
-                                <div class="indicatorDot">
-                                </div>
-                                <div class="indicatorDot">
-                                </div>
-                          </div>
+              </div>
 
+
+                    <div class="aboutLayout" id="aboutPage">
+
+                        <div class="profileImage">
+                        </div>
+
+
+                        <div class="profileDescription">
+                          Giulia Pex is an illustrator currently based in Milano.
+                          <br>
+                          Giulia was born and raised in a vibrant small city in the countryside.
+                          <br>
+                          <br>
+                          Despite the fascination for drawing, Giulia has inititally studied photography and actively worked as a still life photographer and set designer, to then realise that something was not in the right place.
+                          <br>
+                          Giulia has since then worked for global clients and her first graphic novel "Khalat" has been published internationally and translated in different languages.
+                          <br>
+                          <br>
+                          Selected clients: Corriere della Sera, Asfero Films, Nike
+                        </div>
 
                     </div>
+
 
 
                     <div class="instaButtonContainer">
@@ -141,11 +196,11 @@
                           say hi on instagram
                         </a>
 
-                        <a class="instaButton" id="instaButton" href="/about">
-                          say hi on instagram
-                        </a>
 
                     </div>
+
+
+
 
 
                 <script>
