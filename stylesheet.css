@@ -464,9 +464,9 @@ body{
   }
 
   .bottomContainer{
-    position: absolute;
+    position: fixed;
     bottom: 0px;
-    background-color: white;
+    background-color: green;
   }
 
   .instaButtonContainer{
