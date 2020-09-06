@@ -4,6 +4,9 @@ body{
   overflow: hidden;
 }
 
+.noScroll{
+  overflow: hidden;
+}
 
 .intro{
   width:100vw;
