@@ -415,7 +415,7 @@ body{
 
   .heroImage{
    width: 100vw;
-   height: 60vh;
+   height: 55vh;
    scroll-snap-align: start;
    position: relative;
   }
