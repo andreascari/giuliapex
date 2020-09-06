@@ -44,7 +44,6 @@ body{
 }
 
 
-
 .title{
   width:60%;
   text-align: center;
@@ -243,4 +242,14 @@ body{
   }
 
 
-}
+  .profileImage{
+    width: 50vh;
+    height: auto;
+    background-image: url("assets/3c.png");
+  }
+
+  .profileDescription{
+    background-color: blue;
+    color: red;
+    font-family: 'Alata',sans-serif;
+  }
