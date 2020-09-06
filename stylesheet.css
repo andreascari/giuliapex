@@ -79,6 +79,10 @@ body{
     transition: transform 0.2s;
 }
 
+.hamburgerMenu:hover{
+  cursor: pointer;
+}
+
 .hamburgerMenuLine{
   display: flex;
   flex-direction: row;
@@ -117,7 +121,7 @@ body{
   padding-left: 1vw;
   padding-top: 2vh;
   width: 27vw;
-  height: 100vh;
+  height: 98vh;
   position: absolute;
   left: -30vw;
   top: 0;
@@ -359,8 +363,8 @@ body{
 
 
   .closedMenu{
-    width: 100vw;
     left: -150vw;
+    width: 96vw;
     padding-left: 4vw;
   }
 
@@ -435,6 +439,7 @@ body{
   }
 
   .profileImage{
+    margin-top: 6vh;
     width:100vw;
     padding-top: 40vh;
     background-size: 80vw;
@@ -452,7 +457,7 @@ body{
 
   .bottomContainer{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     background-color: white;
   }
 
