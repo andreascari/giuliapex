@@ -487,10 +487,10 @@ body{
   }
 
   .bottomContainer{
-    height: 15vh;
-    position: absolute;
+    position: fixed;
     background-color: white;
     bottom: 0;
+    display: flex;
   }
 
   .instaButtonContainer{
