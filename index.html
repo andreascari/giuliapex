@@ -15,78 +15,7 @@
 
 
 
-          <script>
 
-
-            function dogmode() {
-              document.getElementById("dogLeft").classList.toggle("imageDogLeft")
-              document.getElementById("dogCenter").classList.toggle("imageDogCenter")
-              document.getElementById("dogRight").classList.toggle("imageDogRight")
-              document.getElementById("wordsLeft").classList.toggle("imageWordsLeft")
-              document.getElementById("wordsCenter").classList.toggle("imageWordsCenter")
-              document.getElementById("wordsRight").classList.toggle("imageWordsRight")
-              document.getElementById("dogButton").classList.toggle("dogButtonSelected")
-
-              var x = document.getElementById("instaButton");
-              if (x.innerHTML === "say woof on instagram") {
-                x.innerHTML = "say hi on instagram";
-                } else {
-                  x.innerHTML = "say woof on instagram";
-                }
-            }
-
-
-            function menu() {
-              document.getElementById("menu").classList.toggle("expandedMenu")
-              document.getElementById("backgroundCover").classList.toggle("hideBackgroundCover")
-            }
-
-
-
-            function homeMenu() {
-
-              document.getElementById("homeLink").classList.add("menuItemSelected")
-              document.getElementById("aboutLink").classList.remove("menuItemSelected")
-
-
-              setTimeout(() => {
-                menu();
-                document.getElementById("homePage").classList.remove("hideHomePage")
-                document.getElementById("aboutPage").classList.add("hideAboutPage")
-                document.getElementById("dogButtonContainer").classList.remove("hideDogButton")
-              }, 350);
-            }
-
-            function aboutMenu() {
-
-              document.getElementById("homeLink").classList.remove("menuItemSelected")
-              document.getElementById("aboutLink").classList.add("menuItemSelected")
-
-
-              setTimeout(() => {
-              menu();
-              document.getElementById("homePage").classList.add("hideHomePage")
-              document.getElementById("aboutPage").classList.remove("hideAboutPage")
-              document.getElementById("dogButtonContainer").classList.add("hideDogButton")
-            }, 350);
-            }
-
-
-            function shopMenu() {
-              document.getElementById("homeLink").classList.add("menuItemSelected")
-              document.getElementById("aboutLink").classList.remove("menuItemSelected")
-
-
-              setTimeout(() => {
-                menu();
-                document.getElementById("homePage").classList.remove("hideHomePage")
-                document.getElementById("aboutPage").classList.add("hideAboutPage")
-                document.getElementById("dogButtonContainer").classList.remove("hideDogButton")
-              }, 350);
-            }
-
-
-          </script>
 
 
           <div class="noScroll">
@@ -236,19 +165,20 @@
                                 <br>
                             <span class="profileDescription">
                                 Fallen in love with her camera, she attended the Italian Institute of Photography where she experimented the commingling between her images and drawings. Not really satisfied, she decided to join the illustration class at Scuola del Fumetto to focus on research and improvement of her personal style.
-
                                 <br>
                                 <br>
                                 She currently works as a freelancer to save money to afford a personal dog to pet.
                           </span>
                                 <br>
                                 <br>
-                          <span class="profileDescription">
-                          for enquiries:
-                          </span>
-                          <span class="emailStyle">
-                          giuliapex@gmail.com
-                          </span>
+                          <div>
+                              <span class="profileDescription">
+                              for enquiries:
+                              </span>
+                              <span class="emailStyle">
+                              giuliapex@gmail.com
+                              </span>
+                          </div>
                                 <br>
                                 <br>
                           <span class="profileDescription">
@@ -263,7 +193,7 @@
                     <div class="instaButtonContainer">
 
                         <a class="instaButton" id="instaButton" href="https://www.instagram.com/giuliapex">
-                          say hi on instagram v0.3
+                          say hi on instagram
                         </a>
 
 
@@ -277,40 +207,11 @@
 
 
 
-                <script>
-                                    const list = document.querySelector('.heroContainer');
-                                    const items = Array.from(document.querySelectorAll('.imageColumn'));
-                                    const indicators = Array.from(document.querySelectorAll('.indicatorDot'));
 
-                                    const observer = new IntersectionObserver(onIntersactionObserved,
-                                      {
-                                        root: list,
-                                        threshold: 0.5
-                                    });
-
-                                    items.forEach(item => {
-                                      observer.observe(item);
-                                    });
-
-                                    function onIntersactionObserved(entries) {
-                                      entries.forEach(entry => {
-                                        if (entry.isIntersecting) {
-                                          const intersectingIndex = items.indexOf(entry.target);
-                                          activateIndicator(intersectingIndex);
-                                        }
-                                      });
-                                    }
-
-                                    function activateIndicator(index) {
-                                      indicators.forEach((indicator,i) => {
-                                        indicator.classList.toggle('indicatorDotActive', i===index);
-                                      });
-                                      }
-
-              </script>
 
   </body>
 
+  <script src="index.js"> </script>
 
 
 </html>
