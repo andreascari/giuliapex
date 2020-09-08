@@ -105,8 +105,8 @@ body{
 }
 
 .hamburgerMenuDot{
-  height: 5px;
-  width: 5px;
+  height: 6px;
+  width: 6px;
   background-color: black;
   transform: rotate(45deg);
 }
@@ -194,7 +194,7 @@ body{
 }
 
 .dogButton{
-  height: 15px;
+  height: 14px;
   width: 19px;
   border: 1px solid black;
   padding-left: 3px;
