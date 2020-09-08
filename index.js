@@ -3,9 +3,6 @@
     document.getElementById("dogLeft").classList.toggle("imageDogLeft")
     document.getElementById("dogCenter").classList.toggle("imageDogCenter")
     document.getElementById("dogRight").classList.toggle("imageDogRight")
-    document.getElementById("wordsLeft").classList.toggle("imageWordsLeft")
-    document.getElementById("wordsCenter").classList.toggle("imageWordsCenter")
-    document.getElementById("wordsRight").classList.toggle("imageWordsRight")
     document.getElementById("dogButton").classList.toggle("dogButtonSelected")
 
     var x = document.getElementById("instaButton");

@@ -257,18 +257,14 @@ body{
   background-image: url("assets/1a.jpg");
 }
 
-.imageWordsLeft{
-  background-image: url("assets/1b.png");
-}
-
 .imageDogLeftInactive{
-  background-image: url("assets/1c.png");
+  background-image: url("assets/1b.jpg");
   opacity: 0;
   transition: opacity 0.5s;
 }
 
 .imageDogLeft{
-  background-image: url("assets/1c.png");
+  background-image: url("assets/1b.jpg");
   opacity: 1;
   transition: opacity 0.5s;
 }
@@ -277,18 +273,14 @@ body{
   background-image: url("assets/2a.jpg");
 }
 
-.imageWordsCenter{
-  background-image: url("assets/2b.png");
-}
-
 .imageDogCenterInactive{
-  background-image: url("assets/2c.png");
+  background-image: url("assets/2b.jpg");
   opacity: 0;
   transition: opacity 0.5s;
 }
 
 .imageDogCenter{
-  background-image: url("assets/2c.png");
+  background-image: url("assets/2b.jpg");
   opacity: 1;
   transition: opacity 0.5s;
 }
@@ -297,19 +289,16 @@ body{
   background-image: url("assets/3a.jpg");
 }
 
-.imageWordsRight{
-  background-image: url("assets/3b.png");
-}
 
 .imageDogRightInactive{
-  background-image: url("assets/3c.png");
+  background-image: url("assets/3b.jpg");
   opacity: 0;
   transition: opacity 0.5s;
 }
 
 
 .imageDogRight{
-  background-image: url("assets/3c.png");
+  background-image: url("assets/3b.jpg");
   opacity: 1;
   transition: opacity 0.5s;
 }
