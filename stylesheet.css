@@ -353,18 +353,11 @@ body{
   display: none;
 }
 
-.profileImageContainer{
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 
 .profileImage{
-  width:70%;
-  height: 70%;
+  width: 60%;
+  height: 60%;
   background-size: contain;
   background-image: url("assets/giulia.jpg");
   background-repeat: no-repeat;
@@ -373,7 +366,7 @@ body{
 
 .profileDescriptionContainer{
   font-family: 'Roboto',sans-serif;
-  width: 30%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -482,19 +475,11 @@ body{
     display: none;
   }
 
-  .profileImageContainer{
-    width: 80%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
-
 
   .profileImage{
-    height: 100px;
-    width: 200px;
+    margin-top: 20px;
+    min-height: 300px;
+    width: 400px;
     background-size: contain;
     background-image: url("assets/giulia.jpg");
     background-repeat: no-repeat;
@@ -503,7 +488,7 @@ body{
 
   .profileDescriptionContainer{
     font-family: 'Roboto',sans-serif;
-    margin-top: 20px;
+    margin-top: 40px;
     width: 80%;
     height: auto;
     display: flex;
