@@ -466,7 +466,7 @@ body{
   .aboutLayout{
     position: absolute;
     top: 90px;
-    height: calc(100vh - 90px - 6vh);
+    height: calc(100vh - 90px - 6vh - 45px);
     width: 100vw;
     max-width: 2000px;
     display: flex;
