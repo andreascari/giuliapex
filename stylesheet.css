@@ -1,3 +1,7 @@
+:root{
+  --heightview: calc(var(--vh, 1vh) * 100)
+}
+
 html{
   width:100%;
   height:100%;
@@ -24,7 +28,7 @@ body{
 .intro{
   width:100vw;
   height:100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  height: var(--heightview);
   background-color: white;
   position: fixed;
   top: 0;
@@ -459,7 +463,7 @@ body{
   .aboutLayout{
     position: absolute;
     top: 90px;
-    height: calc(100vh - 90px - 6vh - 45px);
+    height: calc(var(--heightview) - 90px - 6vh - 45px);
     width: 100vw;
     max-width: 2000px;
     display: flex;
@@ -477,7 +481,7 @@ body{
 
 
   .profileImage{
-    margin-top: 20px;
+    margin-top: 40px;
     min-height: 300px;
     width: 400px;
     background-size: contain;
@@ -495,7 +499,7 @@ body{
     flex-direction: column;
     justify-content:  flex-start;
     padding-right: 0;
-
+    padding-bottom: 50px;
   }
 
   .profileDescription{
