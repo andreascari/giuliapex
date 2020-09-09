@@ -488,7 +488,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+
   }
 
 
@@ -510,7 +510,7 @@ body{
     flex-direction: column;
     justify-content:  flex-start;
     padding-right: 0;
-    background-color: blue;
+
   }
 
   .profileDescription{
