@@ -521,3 +521,51 @@ body{
   .instaButtonContainer{
     margin-bottom: 3vh;
   }
+
+
+
+  @media only screen  and (max-height: 500px) {
+
+    .navbar {
+      height: 20px;
+    }
+
+    .title{
+      font-size: 22px;
+    }
+
+    .heroContainer{
+      margin-top: 5px;
+    }
+
+    .hamburgerMenuDot{
+      height: 4px;
+      width: 4px;
+    }
+
+    .dogModeText{
+      font-family: 'Alata', sans-serif;
+      font-size: 8px;
+    }
+
+    .aboutLayout{
+      top: 60px;
+      height: calc(var(--heightview) - 60px - 6px - 35px);
+    }
+
+    .instaButtonContainer{
+      margin-bottom: 3px;
+      margin-top: 3px;
+    }
+
+    .instaButton{
+      height: 15px;
+      font-size: 10px;
+    }
+
+    .menuItem{
+      margin-bottom: 8px;
+      font-size: 22px;
+    }
+
+  }
