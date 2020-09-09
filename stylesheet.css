@@ -314,6 +314,12 @@ body{
 }
 
 
+.bottomContainer{
+  position: relative;
+  display: flex;
+  background-color: white;
+}
+
 
 .instaButtonContainer{
   width: 100vw;
@@ -341,8 +347,7 @@ body{
 }
 
 .aboutLayout{
-  position: absolute;
-  top: 90px;
+  position: relative;
   height: 70vh;
   width: 100vw;
   max-width: 2000px;
@@ -419,7 +424,7 @@ body{
     justify-content: flex-start;
     -webkit-overflow-scrolling: touch;
     overflow-x: scroll;
-    margin-top: calc(4vh * 1.6);
+    margin-top: 20px;
   }
 
   .heroContainer::-webkit-scrollbar {display: none}
